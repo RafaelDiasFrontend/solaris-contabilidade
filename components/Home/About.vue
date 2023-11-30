@@ -2,7 +2,7 @@
   <section id="about">
     <v-container class="df-width">
       <v-row>
-        <v-col cols="12" md="5" sm="12" class="text-left">
+        <v-col cols="12" md="5" class="text-left">
           <img
             class="elevation-13"
             src="~/assets/imagens/home/solaris.jpg"
@@ -45,42 +45,42 @@
   </section>
 </template>
 <script>
-export default {};
+  export default {}
 </script>
 
-
 <style scoped>
-#about {
-  padding: 6em 0;
-}
-
-.about-p {
-  font-size: 0.90rem; 
-  line-height: 1.8;
-  color: #828282;
-  width: 90%;
-}
-@media only screen and (min-width: 1904px) {
-.about-p {
-  font-size: 0.95rem;  
-   width: 92%;
-}}
-@media only screen and (max-width: 904px) {
-  #about img {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .about-p {
-  font-size: 0.80rem; 
-  line-height: 1.7;
-}
   #about {
-    padding: 0.5em 0;
+    padding: 6em 0;
   }
-  #about img {
-    display: none;
+
+  .about-p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #828282;
+    width: 90%;
   }
-}
+  @media only screen and (min-width: 1904px) {
+    .about-p {
+      font-size: 0.95rem;
+      width: 92%;
+    }
+  }
+  @media only screen and (max-width: 904px) {
+    #about img {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    .about-p {
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    #about {
+      padding: 0.5em 0;
+    }
+    #about img {
+      display: none;
+    }
+  }
 </style>

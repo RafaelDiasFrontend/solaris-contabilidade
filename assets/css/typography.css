@@ -1,50 +1,50 @@
 html,
 body {
-    font-family: var(--primary-font)!important;
-    font-size: 16px;
+  font-family: var(--primary-font) !important;
+  font-size: 16px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 1.05rem;
-    font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
 h4 {
-    font-size: 1rem;
-    font-weight: 400;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 h5 {
-    font-size: 0.75rem;
-    font-weight: 400;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 h6 {
-    font-size: 0.55rem;
-    font-weight: 400;
+  font-size: 0.55rem;
+  font-weight: 400;
 }
 
 p {
-    font-size: 0.92rem;
+  font-size: 0.92rem;
 }
 
 .p {
-    font-size: 1rem;
-    line-height: 1.90em;
-    font-weight: 400;
-    letter-spacing: 0.001em;
+  font-size: 1rem;
+  line-height: 1.9em;
+  font-weight: 400;
+  letter-spacing: 0.001em;
 }
 .solaris-title {
   font-size: 1.8rem;
@@ -55,135 +55,130 @@ p {
   letter-spacing: 1px;
 }
 .p-small {
-    font-size: 0.96rem;
-    line-height: 1.70em;
-    font-weight: 400;
-    letter-spacing: 0.001em;
+  font-size: 0.96rem;
+  line-height: 1.7em;
+  font-weight: 400;
+  letter-spacing: 0.001em;
 }
 
 .h2 {
-    font-size: 1.5rem;
-    line-height: 1.25;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    color: var(--primary-color);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .h3 {
-    font-size: 1.2rem;
-    line-height: 1.15;
-    letter-spacing: 0.013em;
+  font-size: 1.2rem;
+  line-height: 1.15;
+  letter-spacing: 0.013em;
 }
 
 .h4 {
-    font-size: 0.90rem;
-    letter-spacing: 0.01em;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
 }
 
 .h2-title {
-    font-size: 1.2rem;
-    letter-spacing: 0.02em;
-    font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
 }
 
 .h3-title {
-    font-size: 1.2rem;
-    letter-spacing: 0.02em;
-    font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
 }
-
 
 /* Fonts */
 
-.about-title {    
-    color: var(--primary-color);
-    font-size: 2rem;    
-    font-weight: 700;
-    letter-spacing: 0.035em;
+.about-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
 }
 .rdg-font {
-    font-family: Magneto!important;
+  font-family: Magneto !important;
 }
 
 .login-title {
-    font-size: 1.3rem!important;
-    letter-spacing: 0.08em!important;
-    margin-bottom: 1em!important;
-    font-weight: 600;
-    text-transform: initial!important;
+  font-size: 1.3rem !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 1em !important;
+  font-weight: 600;
+  text-transform: initial !important;
 }
-
 
 /* Desktop */
 
 @media only screen and (max-width: 1390px) {
-   
-    .about-title {
-        font-size: 1.37rem;
-        letter-spacing: 0.02em;
-        font-weight: 700;
-    }
-    .p {
-        font-size: 0.94rem!important;
-        line-height: 1.62em;
-        font-weight: 400;
-        letter-spacing: 0.001em;
-    }
+  .about-title {
+    font-size: 1.37rem;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .p {
+    font-size: 0.94rem !important;
+    line-height: 1.62em;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+  }
 }
-
 
 /* Desktop */
 
 @media only screen and (max-width: 1200px) {
-    body {      
-        font-size: 15px;
-    }
-    .about-title {
-        font-size: 1.27rem;
-        letter-spacing: 0.02em;
-        font-weight: 700;
-    }
-    .p {
-        font-size: 0.90rem!important;
-        line-height: 1.62em;
-        font-weight: 400;
-        letter-spacing: 0.001em;
-    }
+  body {
+    font-size: 15px;
+  }
+  .about-title {
+    font-size: 1.27rem;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .p {
+    font-size: 0.9rem !important;
+    line-height: 1.62em;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    body {      
-        font-size: 14px;
-    }
-    .solaris-title {
-        font-size: 1.5rem;
-    }
-             
+  body {
+    font-size: 14px;
+  }
+  .solaris-title {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
-    h1 {
-        font-size: 2rem;
-    }  
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    body {      
-        font-size: 13px;
-    }
-    .h4 {
-        font-size: 0.70rem;
-        letter-spacing: 0.01em;
-        font-weight: 400;
-    }
-    .p {
-        font-size: 0.80rem!important;
-    }
-    .about-title {
-        font-size: 0.98rem;
-        margin-bottom: 10px;
-        letter-spacing: 0.01em;
-        text-align: center!important;
-    }
+  body {
+    font-size: 13px;
+  }
+  .h4 {
+    font-size: 0.7rem;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+  }
+  .p {
+    font-size: 0.8rem !important;
+  }
+  .about-title {
+    font-size: 0.98rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+    text-align: center !important;
+  }
 }

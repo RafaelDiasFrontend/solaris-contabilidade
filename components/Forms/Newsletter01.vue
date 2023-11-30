@@ -1,5 +1,5 @@
- <template>
-  <section id="news"  data-aos="zoom-out" data-aos-duration="2100">
+<template>
+  <section id="news" data-aos="zoom-out" data-aos-duration="2100">
     <v-form
       @submit.prevent="addToNewsletter"
       label="fique por dentro das novidades"
@@ -21,8 +21,7 @@
             <div class="text-center">
               <v-btn
                 type="submit"
-                color="#313131"                 
-                       
+                color="#313131"
                 elevation="12"
                 class="btn px-12 white--text btn-register"
                 >Enviar</v-btn
@@ -32,44 +31,42 @@
         </v-row>
       </v-container>
     </v-form>
-   
-      <img
-        src="~/assets/imagens/home/cities/2.png"
-        width="100%"
-        height="auto"
-        class='pt-6'
-      />
-   
+
+    <img
+      src="~/assets/imagens/home/cities/2.png"
+      width="100%"
+      height="auto"
+      class="pt-6"
+    />
   </section>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      email: "",
-    };
-  },
-  methods: {
-    async addToNewsletter() {
-      try {
-        let data = {
-          email: this.email,
-        };
-        let newsletters = await this.$axios.$post("/api/newsletters", data);
-        this.$swal(
-          "Parabens!",
-          "Seu email foi adicionado com sucesso!",
-          "success"
-        );
-        this.newsletters.push(data);
-      } catch (err) {
-        console.log(err);
+  export default {
+    data() {
+      return {
+        email: '',
       }
     },
-  },
-};
+    methods: {
+      async addToNewsletter() {
+        try {
+          let data = {
+            email: this.email,
+          }
+          let newsletters = await this.$axios.$post('/api/newsletters', data)
+          this.$swal(
+            'Parabens!',
+            'Seu email foi adicionado com sucesso!',
+            'success',
+          )
+          this.newsletters.push(data)
+        } catch (err) {
+          console.log(err)
+        }
+      },
+    },
+  }
 </script>
 
-<style>
-</style>
+<style></style>
