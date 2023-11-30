@@ -35,10 +35,6 @@
             <li>Cadastre-se</li>
           </a>
         </ul>
-
-        <template>
-          <div class="white--text"></div>
-        </template>
       </v-app-bar>
     </v-container>
 
