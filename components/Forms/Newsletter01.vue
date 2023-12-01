@@ -1,7 +1,7 @@
 <template>
   <section id="news" data-aos="zoom-out" data-aos-duration="2100">
     <v-form
-      @submit.prevent="addToNewsletter"
+      @submit.prevent="handleNewsletterSubmit"
       label="fique por dentro das novidades"
     >
       <v-container class="df-width">
@@ -42,27 +42,44 @@
 </template>
 
 <script>
+  const WEB3FORMS_ACCESS_KEY = '6130e23b-0df3-4bd7-8abb-d04d89af3795'
   export default {
     data() {
       return {
+        isLoading: false,
         email: '',
       }
     },
     methods: {
-      async addToNewsletter() {
+      resetNewsletter() {
+        this.email = ''
+      },
+
+      async handleNewsletterSubmit() {
         try {
-          let data = {
+          this.isLoading = true
+          const data = {
+            access_key: WEB3FORMS_ACCESS_KEY,
             email: this.email,
+            from_name: this.email,
+            message: 'Cadastro newsletter Solaris Contabilidade',
           }
-          let newsletters = await this.$axios.$post('/api/newsletters', data)
+          await this.$axios.$post('https://api.web3forms.com/submit', data)
           this.$swal(
             'Parabens!',
             'Seu email foi adicionado com sucesso!',
             'success',
           )
-          this.newsletters.push(data)
         } catch (err) {
           console.log(err)
+          this.$swal(
+            'Ops ocorreu um erro!',
+            'Atualiza a página e tente novamente por favor...',
+            'error',
+          )
+        } finally {
+          this.resetNewsletter()
+          this.isLoading = false
         }
       },
     },

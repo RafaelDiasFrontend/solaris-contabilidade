@@ -8,7 +8,7 @@
     <Contact />
     <Mission />
     <Testimonials :allTestimonials="testimonials" />
-    <!-- <Blog :allPosts='products' />  -->
+
     <Newsletter01 />
   </div>
 </template>
@@ -103,38 +103,33 @@
         structuredData: {
           '@context': 'http://schema.org',
           '@type': 'website',
-          // More structured data...
         },
         title: 'Contabilidade e Consultoria no Guarujá',
         image:
           'https://solaris-contabilidade-andre.s3.amazonaws.com/solaris_og.jpg',
         description: 'Solaris Contabilidade',
-        testimonials: [],
+        testimonials: [
+          {
+            photo:
+              'https://img.freepik.com/fotos-premium/empresario-com-rosto-nao-barbeado-retrato-do-empresario-empresario-usando-gravata-borboleta-com-smoking_474717-78987.jpg',
+            name: 'A Solaris trouxe eficiência e transparência para a contabilidade da minha empresa. Desde o início da parceria, a equipe tem se mostrado altamente profissional, proporcionando relatórios financeiros precisos e organizados. Recomendo a Solaris para quem busca uma gestão contábil sólida e confiável.',
+            text: 'João Silva, Empresário',
+          },
+          {
+            name: 'A decisão de escolher a Solaris para cuidar da contabilidade foi acertada. A agilidade no processamento de dados e a precisão nas análises financeiras deram uma visão estratégica ao nosso desempenho. Estamos muito satisfeitos com a parceria e confiantes em continuar crescendo juntos',
+            text: 'Ana Oliveira, Diretora Financeira',
+          },
+          {
+            name: 'Contratar a Solaris foi fundamental para a gestão financeira da minha empresa. Eles simplificaram processos complexos, tornando a execução de obrigações fiscais mais eficaz. Sempre disponíveis, a equipe oferece suporte e esclarecimento de dúvidas. Com a Solaris, a contabilidade se tornou mais fácil e eficiente.',
+            text: 'Carlos Santos, Empreendedor',
+          },
+        ],
         clients: [],
         email: '',
         name: '',
         subject: '',
         message: '',
       }
-    },
-
-    methods: {
-      async addToNewsletter() {
-        try {
-          let data = {
-            email: this.email,
-          }
-          let newsletters = await this.$axios.$post('/api/newsletters', data)
-          this.$swal(
-            'Parabens!',
-            'Seu email foi adicionado com sucesso!',
-            'success',
-          )
-          this.newsletters.push(data)
-        } catch (err) {
-          console.log(err)
-        }
-      },
     },
   }
 </script>
