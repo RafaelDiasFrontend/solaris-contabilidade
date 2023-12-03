@@ -1,6 +1,5 @@
 export default {
-  target: 'server',
-  ssr: false,
+  target: 'static',
 
   head: {
     titleTemplate: '%s',
