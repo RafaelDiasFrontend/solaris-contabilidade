@@ -1,5 +1,6 @@
 export default {
   target: 'static',
+
   head: {
     titleTemplate: '%s',
     title: 'frontend',
