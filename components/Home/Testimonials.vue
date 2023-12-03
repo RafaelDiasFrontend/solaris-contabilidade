@@ -18,7 +18,7 @@
                 <v-container
                   class="d-flex flex-column align-center text-center justify-center"
                 >
-                  <h3 class="h3 font-weight-bold mb-2 dark-color">
+                  <h3 class="h3 mb-2 dark-color">
                     {{ item.name }}
                   </h3>
                   <p class="p px-12 grey--text">
